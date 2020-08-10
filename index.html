@@ -1,0 +1,98 @@
+<!DOCTYPE html5>
+<html>
+<head>
+<title>C33 Survey</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <center>
+        <h1 id="title">
+            C33 Survey Form
+        </h1>
+        <p id="description">
+            <i>
+            Fill it, don't fill it, we still move, haters gon hate. Please fill it :)
+            </i>
+        </p>
+        <br>
+    </center>
+
+    <form id="survey-form">
+        <br>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name:</label><br>
+                    <input type="text" id="name" class="form-control" name="name" placeholder="Enter your name" required><br>
+                </div>
+            
+                <div class="form-group">
+                    <label for="email" id="email-label">Email:</label><br>
+                    <input type="email" id="email" class="form-control" name="email" placeholder="Your email address" required><br>
+                </div>
+                
+                <div class="form-group">
+                    <label for="age" id="number-label">Age: (optional)</label><br>
+                    <input type="number" id="number"  class="form-control" name="age" placeholder="Enter your age" min=15 max=70 required><br>    
+                </div>
+                
+                <div class="form-group">
+                    <p>Which option best describes your role:</p>
+                    <select name="role" id="dropdown" class="form-control">
+                        <option value="Student" selected>Student</option>
+                        <option value="Full time job" >Full time Job</option>
+                        <option value="Full time Learner" >Full time Learner</option>
+                        <option value="Prefer not to say" >Prefer not to say</option>
+                        <option value="Other" >Other</option>
+                    </select>    
+                </div>
+            
+                <div class="form-group">
+                    <p>Would you recommend freeCodeCamp to anyone?</p>
+                    <input type="radio" id="definitely" name="recommend" value="definitely">
+                    <label for="definitely">Definitely</label><br>
+                    <input type="radio" id="maybe" name="recommend" value="maybe">
+                    <label for="maybe">Maybe</label><br>
+                    <input type="radio" id="notsure" name="recommend" value="notsure">
+                    <label for="notsure">Not Sure</label>
+                </div>
+                
+                <div class="form-group">
+                    <p>What is your favourite feature of freeCodeCamp:</p>
+                    <select name="feature" class="form-control">
+                        <option value="Challenges" selected>Challenges</option>
+                        <option value="Projects" >Projects</option>
+                        <option value="Community" >Community</option>
+                        <option value="Open Source" >Open Source</option>
+                    </select><br><br>
+                </div>
+
+                <div class="form-group">
+                    <p>What would you like to see improved? (check all that apply)</p>
+                    <input type="checkbox" name="improve" value="dataVisualisation"> Data Visualizaiton <br>
+                    <input type="checkbox" name="improve" value="Front-end projects"> Front-End Projects <br>
+                    <input type="checkbox" name="improve" value="Videos"> Videos <br>
+                    <input type="checkbox" name="improve" value="City-meetups"> City Meetups <br>
+                    <input type="checkbox" name="improve" value="Forum"> Forum <br>
+                    <input type="checkbox" name="improve" value="Challenges"> Challenges <br>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comments">Any Comments or Suggestions</label><br>
+                    <!-- <input type="textarea" rows="4" id="comments" name="comments"> -->
+                    <textarea rows="4" class="form-control" form="survey-form"></textarea><br><br>    
+                </div>
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+            
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </form>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
