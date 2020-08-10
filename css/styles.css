@@ -1,12 +1,10 @@
 #background{
-    background-image: url("./backgroundImage.jpg");
+    /* background-image: url("./backgroundImage.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.75;
-    /* background-color: blue; */
-}
-form{
     background-color: rgba(227, 232, 233, 0.842);
-    padding-left: 10%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    /* opacity: 0.75; */
+    /* background-color: blue; */
 }
